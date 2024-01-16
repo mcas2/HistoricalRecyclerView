@@ -1,4 +1,4 @@
-package com.mcas2.recyclertutorial;
+package com.mcas2.historiceventsrecycler;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,17 +10,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-
-/*
-* Creamos una clase Adapter que extiende de RecyclerView.Adapter,
-* cuyo tipo está definida por una * clase interna que definiremos abajo
-* y que extiende de RecyclerView.ViewHolder
-*
-* Creamos un constructor al que le llegue el contexto y el array
-* de clases instanciadas del modelo.
-*
-* Construimos de abajo hacia arriba.
-* */
 
 public class HistoricEventRVAdapter extends RecyclerView.Adapter<HistoricEventRVAdapter.MyViewHolder> {
     Context context;
@@ -35,13 +24,12 @@ public class HistoricEventRVAdapter extends RecyclerView.Adapter<HistoricEventRV
     @Override
     public HistoricEventRVAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.rv_row, parent, false);
+        View view = inflater.inflate(R.layout.cv_row, parent, false);
         return new HistoricEventRVAdapter.MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull HistoricEventRVAdapter.MyViewHolder holder, int position) {
-        //El holder, que es del tipo subclase adaptador que hemos creado, contiene sus vistas, así que podemos llamarlas
         holder.tvName.setText(historicEventModels.get(position).getEventName());
         holder.tvDate.setText(historicEventModels.get(position).getEventDate());
         holder.tvLocation.setText(historicEventModels.get(position).getEventLocation());
@@ -54,12 +42,12 @@ public class HistoricEventRVAdapter extends RecyclerView.Adapter<HistoricEventRV
 
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         TextView tvName, tvDate, tvLocation;
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvName = itemView.findViewById(R.id.eventName);
-            tvDate = itemView.findViewById(R.id.eventDate);
-            tvLocation = itemView.findViewById(R.id.eventLocation);
-
+            tvName = itemView.findViewById(R.id.tvEventName);
+            tvDate = itemView.findViewById(R.id.tvEventDate);
+            tvLocation = itemView.findViewById(R.id.tvEventLocation);
         }
     }
 }

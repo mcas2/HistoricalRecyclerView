@@ -1,10 +1,14 @@
 <resources>
-    <string name="app_name">Eventos históricos</string>
-    <string-array name="historic_event_name">
-        <item>Caída del Imperio Romano</item>
+    <string name="app_name">HistoricEventsRecycler</string>
+    <string-array name="historic_event_names">
+        <item>Fundación mítica de Roma</item>
+        <item>Inicio de la Guerra del Peloponeso</item>
+        <item>Caída del imperio romano</item>
         <item>Primer ataque vikingo</item>
         <item>Coronación de Carlomagno</item>
+        <item>Batalla de las Navas de Tolosa</item>
         <item>Toma de Constantinopla</item>
+        <item>Conquista de Granada</item>
         <item>Llegada de los europeos a América</item>
         <item>Inicio de la Guerra de los 30 años</item>
         <item>Fin de la dinastía Ming</item>
@@ -13,26 +17,40 @@
         <item>Revolución francesa</item>
         <item>Congreso de Viena</item>
         <item>Comuna de París</item>
+        <item>Revolución bolchevique</item>
+        <item>Fin de la I Guerra Mundial</item>
+        <item>Fin de la II Guerra Mundial</item>
     </string-array>
-    <string-array name="historic_event_date">
+    <string-array name="historic_event_dates">
+        <item>753 a.C.</item>
+        <item>431 a.C.</item>
         <item>476</item>
         <item>789</item>
         <item>800</item>
+        <item>1212</item>
         <item>1453</item>
+        <item>1492</item>
         <item>1492</item>
         <item>1618</item>
         <item>1644</item>
         <item>1648</item>
         <item>1776</item>
         <item>1789</item>
-        <item>1814</item>
+        <item>1815</item>
         <item>1871</item>
+        <item>1917</item>
+        <item>1918</item>
+        <item>1945</item>
     </string-array>
-    <string-array name="historic_event_location">
-        <item>Italia</item>
-        <item>Gran Bretaña</item>
-        <item>Aquisgrán</item>
+    <string-array name="historic_event_locations">
+        <item>Roma</item>
         <item>Grecia</item>
+        <item>Italia</item>
+        <item>Islas británicas</item>
+        <item>Aquisgrán</item>
+        <item>Navas de Tolosa</item>
+        <item>Constantinopla</item>
+        <item>Granada</item>
         <item>América</item>
         <item>Europa</item>
         <item>China</item>
@@ -41,5 +59,8 @@
         <item>Francia</item>
         <item>Austria</item>
         <item>París</item>
+        <item>Rusia</item>
+        <item>Europa</item>
+        <item>Mundo</item>
     </string-array>
 </resources>
