@@ -1,4 +1,4 @@
-package com.mcas2.recyclertutorial;
+package com.mcas2.historiceventsrecycler;
 
 import org.junit.Test;
 

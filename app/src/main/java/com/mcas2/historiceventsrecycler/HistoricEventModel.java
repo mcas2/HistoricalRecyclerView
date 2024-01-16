@@ -1,4 +1,4 @@
-package com.mcas2.recyclertutorial;
+package com.mcas2.historiceventsrecycler;
 
 public class HistoricEventModel {
     public String eventName;
@@ -10,7 +10,6 @@ public class HistoricEventModel {
         this.eventDate = eventDate;
         this.eventLocation = eventLocation;
     }
-
 
     public String getEventName() {
         return eventName;
